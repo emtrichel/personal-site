@@ -1,8 +1,20 @@
 /* Base Styles */
 * {
-    background-color: #51d0de;
+    background-color: #8e8e90;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+}
+a{
+    color: #49494b;
+}
+a:visited{
+    color:#d1bfa7 ;
+}
+h1{
+    color: #49494b;
+}
+h2{
+    color: #d1bfa7;
 }
 
 header, footer, nav {
@@ -20,6 +32,7 @@ nav li, nav a.custom-link, .dropdown-content a {
 
 /* Navigation Styles */
 nav {
+    color:#49494b ;
     margin: 10px;
     font-weight: bold;
 }
@@ -30,7 +43,7 @@ nav li {
 }
 
 nav a.custom-link, #projectFilters button {
-    color: #bf4aa8;
+    color: #49494b;
     text-decoration: none;
     padding: 10px; /* Improves click area and appearance */
     cursor: pointer; /* Indicates clickable items */
@@ -43,7 +56,7 @@ nav a.custom-link, #projectFilters button {
 
 /* Ensures hover effect on buttons matches the nav links */
 nav a.custom-link:hover, #projectFilters button:hover {
-    background-color: #ddd; /* Subtle background on hover */
+    background-color: #d1bfa7; /* Subtle background on hover */
     border-radius: 5px; /* Softens edges */
 }
 
@@ -51,6 +64,7 @@ nav a.custom-link:hover, #projectFilters button:hover {
 .dropdown-content {
     display: none;
     position: absolute;
+    color: #8e8e90;
     background-color: #f9f9f9; /* Light background for dropdown */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Adds depth with shadow */
@@ -62,13 +76,13 @@ nav li:hover .dropdown-content {
 }
 
 .dropdown-content a {
-    color: black;
+    color: #49494b;
     padding: 12px 16px;
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd; /* Highlight on hover */
+    background-color: #d1bfa7; /* Highlight on hover */
 }
 
 /* Main Content Styles */
