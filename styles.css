@@ -8,6 +8,10 @@
 header, footer, nav {
     text-align: center;
 }
+footer{
+    background-color: #d9d9d9;
+    border: solid 1px;
+}
 
 nav li, nav a.custom-link, .dropdown-content a {
     display: block;

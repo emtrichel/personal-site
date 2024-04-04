@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Dev Projects | Eric Trichel</title>
     <link rel="stylesheet" href="styles.css">
-    <header>
+    <style>
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .website-box{
+            border: 1px solid;
+            padding: 10px;
+            border-radius: 5px;
+            background: #d9d9d9;
+        }
+        .website-box img{
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>    
+
+<header>
         <h1 style="color:#bf4aa8;">Eric Trichel</h1>
         <h2 style="color:#d9d9d9;">Web Development Projects</h2>
-    </header>
-    <hr>
-    <nav>
+</header>
+<hr>
+<nav>
         <ul>
         <li><a href="index.html" class="custom-link">Home</a></li>
         <li><a href="/projects.html" class="custom-link">Portfolio</a>
@@ -23,5 +44,15 @@
         </li>
         <li><a href="/blog.html" class="custom-link">Blog</a></li>
     </ul>
-    </nav>
-    <hr>
+</nav>
+<hr>
+<body>
+    <div class="gallery">
+        <div class="website-box">
+            <h3 style="background-color: #d9d9d9;">Austin Frost's Personal Website</h3>
+            <img src="media/Screenshot 2024-03-28 170357.png" alt="website screenshot">
+            <p style="background-color: #d9d9d9;">Austin Frost is a North Carolina-based voice actor that needed a website to showcase his work and generate client leads.</p>
+        </div>
+    </div>
+</body>
+<footer>&copy;2024 Eric Trichel</footer>
