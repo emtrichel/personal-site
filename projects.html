@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Eric Trichel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="projects-page">
+    <header>
+        <h1 style="color: #bf4aa8;">Eric Trichel</h1>
+        <h2 style="color:#d9d9d9;">Amateur Web Dev, Computer Enthusiast, Science Nerd</h2>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="/index.html" class="custom-link">Home</a></li>
+            <li><a href="/projects.html" class="custom-link">Portfolio</a></li>    
+            <li><a href="/blog.html" class="custom-link">Blog</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <div id="projectFilters" style="color: #bf4aa8;">Filter:
+        <button class="filterBtn" data-filter="all">All</button>
+        <button class="filterBtn" data-filter="web-development">Web Development</button>
+        <button class="filterBtn" data-filter="software-projects">Software Projects</button>
+        <button class="filterBtn" data-filter="data-science">Data Science</button>
+    </div>
+
+    <main>
+        <!-- Adjusted classes for filtering -->
+        <div class="projectItem web-development">
+            <a href="webdev.html"><h2>Web Development Projects</a></h2>
+            <p>Description or list of web development projects goes here.</p>
+        </div>
+        
+        <div class="projectItem web-development">
+            <a link href="https://www.austinfrost.net"><h2>Austin Frost - Voice Actor</a></h2>
+            <p>A custom low budget website for an American voice actor based out of North Carolina, USA.</p>
+        </div>
+        
+        <div class="projectItem software-projects">
+            <a href="software.html"><h2>Software Projects</a></h2>
+            <p>Description or list of software projects goes here.</p>
+        </div>
+        
+        <div class="projectItem data-science">
+            <a href="data-science.html"><h2>Data Science Projects</a></h2>
+            <p>Description or list of data science projects goes here.</p>
+        </div>
+    </main>
+    
+    <footer>
+        &copy;2024 Eric Trichel
+    </footer>
+    
+    <script>
+        // JavaScript for filtering
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.filterBtn');
+            const projectItems = document.querySelectorAll('.projectItem');
+
+            buttons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    const filter = this.getAttribute('data-filter');
+
+                    projectItems.forEach(function (item) {
+                        if (filter === 'all' || item.classList.contains(filter)) {
+                            item.style.display = 'block'; // Show item
+                        } else {
+                            item.style.display = 'none'; // Hide item
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
