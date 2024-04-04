@@ -21,6 +21,7 @@ nav li, nav a.custom-link, .dropdown-content a {
 /* Navigation Styles */
 nav {
     margin: 10px;
+    font-weight: bold;
 }
 
 nav li {
